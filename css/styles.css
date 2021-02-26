@@ -1,0 +1,205 @@
+* {
+
+    font-family: Arial, sans-serif;
+
+}
+
+.header-container {
+
+    display: grid;
+    grid-template-columns: 3% 3% 82% 3% 3% 3% 3%;
+    grid-template-areas: "a b long c d e f";
+    align-items: center;
+    font-size: 15px;
+    margin: 0;
+    gap: 0px;
+
+}
+
+header a {
+
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+
+}
+
+header a:hover {
+
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+
+}
+
+.about {
+
+    grid-area: a;
+    margin: 1em;
+
+}
+
+.store {
+
+    grid-area: b;
+
+}
+
+.gmail {
+
+    grid-area: c;
+
+}
+
+.images {
+
+    grid-area: d;
+
+}
+
+.six-dot {
+
+    grid-area: e;
+    padding: 1em;
+
+}
+
+.profile {
+
+    grid-area: f;
+
+}
+
+.profile-image {
+
+    border-radius: 50%;
+
+}
+
+.main-container {
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 100px 75px 75px 75px;
+    grid-template-areas: ". . image image . ."
+                         ". . search search . ."
+                         ". . button1 button2 . ."
+                         ". . blurb blurb . .";
+    column-gap: 15px;
+    margin: 8em;
+
+}
+
+.image {
+
+    grid-area: image;
+    justify-self: center;
+
+}
+
+.search {
+
+    grid-area: search;
+    justify-self: center;
+
+}
+
+.search-image {
+
+    position: relative;
+    top: 47%;
+    left: 2%;
+
+
+}
+
+.microphone-image {
+
+    position: relative;
+    bottom: 48%;
+    left: 92%;
+
+}
+
+button {
+
+    font-size: 15px;
+    background-color: rgba(197, 195, 195, 0.1);
+    color: rgb(70, 69, 69)
+
+}
+
+button:hover {
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(190, 189, 189, 0.7);
+
+}
+
+.button1 {
+
+    grid-area: button1;
+    justify-self: right;
+    align-self: center;
+    height: 40px;
+    width: 120px;
+    border-style: none;
+    border-radius: 5px;
+
+}
+
+.button2 {
+
+    grid-area: button2;
+    justify-self: left;
+    align-self: center;   
+    height: 40px;
+    width: 150px;   
+    border-style: none;
+    border-radius: 5px;
+
+}
+
+.blurb {
+
+    grid-area: blurb;
+    justify-self: center;
+    font-size: 14px;
+
+}
+
+.blurb a {
+
+    text-decoration: none;
+    color: rgb(17, 41, 179);
+
+}
+
+.blurb a:hover {
+
+    text-decoration: underline;
+
+}
+
+input {
+
+    width: 525px;
+    height: 38px;
+    border-style: solid;
+    border-color: rgba(194, 191, 191, 0.5);
+    border-width: 1.2px;
+    border-radius: 30px;
+
+}
+
+input:focus {
+
+    outline: none;
+
+}
+
+input[type="text"] {
+
+    padding-left: 50px;
+    font-size: 20px;
+
+}
