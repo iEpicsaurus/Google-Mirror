@@ -7,12 +7,9 @@
 .header-container {
 
     display: grid;
-    grid-template-columns: 3% 3% 82% 3% 3% 3% 3%;
-    grid-template-areas: "a b long c d e f";
+    grid-template-columns: 20px 50px 50px minmax(0px, 90%) 65px 65px 40px;
     align-items: center;
     font-size: 15px;
-    margin: 0;
-    gap: 0px;
 
 }
 
@@ -32,39 +29,37 @@ header a:hover {
 
 .about {
 
-    grid-area: a;
-    margin: 1em;
+    grid-column: 2;
 
 }
 
 .store {
 
-    grid-area: b;
+    grid-column: 3;
 
 }
 
 .gmail {
 
-    grid-area: c;
+    grid-column: 5;
 
 }
 
 .images {
 
-    grid-area: d;
+    grid-column: 6;
 
 }
 
 .six-dot {
 
-    grid-area: e;
-    padding: 1em;
+    grid-column: 7;
 
 }
 
 .profile {
 
-    grid-area: f;
+    grid-column: 8;
 
 }
 
@@ -107,7 +102,6 @@ header a:hover {
     position: relative;
     top: 47%;
     left: 2%;
-
 
 }
 
@@ -180,6 +174,12 @@ button:hover {
 
 }
 
+form {
+
+    width: 100%;
+
+}
+
 input {
 
     width: 525px;
@@ -197,9 +197,129 @@ input:focus {
 
 }
 
+input:hover {
+
+    box-shadow: 0 0 0 1px rgba(138, 137, 137, 0.4);
+
+}
+
 input[type="text"] {
 
     padding-left: 50px;
     font-size: 20px;
+
+}
+
+footer a {
+
+    text-decoration: none;
+    color: rgba(104, 103, 103, 0.8);
+
+}
+
+footer a:hover {
+
+
+    text-decoration: underline;
+
+}
+
+.top-section {
+
+    background-color: rgba(185, 184, 184, 0.2);
+    color: rgba(104, 103, 103, 0.8);
+    font-size: 17px;
+    padding: 1em 1em 0.6em 1.2em;
+
+}
+
+footer {
+
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 0;
+    width: 99vw;
+
+}
+
+.bottom-section {
+
+    background-color: rgba(185, 184, 184, 0.2);
+    color: rgba(104, 103, 103, 0.8);
+    font-size: 17px;
+    padding: 1em 0 1em 1.2em;
+    border-style: solid;
+    border-width: 1px 0 0 0;
+    border-color: rgb(170, 168, 168, 0.3);
+    display: grid;
+    grid-template-columns: 100px 100px 300px minmax(0px, 90%) 85px 75px 80px;
+    align-items: center;
+
+}
+
+.left-item {
+
+    float: left;
+    width: 50%;
+
+}
+
+.right-item {
+
+    width: 50%;
+    float: right;
+
+}
+
+.bottom-item {
+
+    padding-right: 1em;
+    display: inline;
+
+}
+
+.privacy-item {
+
+    grid-column: 5;
+
+}
+
+@media (max-width: 785px) {
+
+    .bottom-section {
+
+        grid-template-columns: 33% 33% 33%;
+        height: 75px;
+        justify-content: center;
+        grid-template-rows: 1fr 1fr;
+
+    }
+
+    .right-item {
+
+        grid-row: 2;
+        align-self: flex-end;
+
+    }
+
+    .privacy-item {
+
+        grid-column: 1;
+        justify-self: flex-end;
+
+    }
+
+    .how-search {
+
+        width: 200px;
+
+    }
+
+    .bottom-item {
+
+        justify-self: center;
+
+    }
+
 
 }
